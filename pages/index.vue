@@ -1,15 +1,9 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <NuxtLink to="/">Nuxt Dojo</NuxtLink>
-        <ul>
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/products">Products</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
+    <h2>Welcome to Nuxt Dojo</h2>
+    <p>Learn Nuxt.js by building a simple e-commerce site.</p>
+    <p>Click on the links above to navigate through the site.</p>
+    <p>Happy coding!</p>
   </div>  
 </template>
 

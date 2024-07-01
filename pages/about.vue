@@ -1,15 +1,8 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <NuxtLink to="/">Nuxt Dojo</NuxtLink>
-        <ul>
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/products">Products</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
+    <h2>About Nuxt Dojo</h2>
+    <p>Nuxt Dojo is a simple e-commerce site built with Nuxt.js.</p>
+    <p>It is a project-based learning platform where you can learn Nuxt.js by building a simple e-commerce site.</p>
   </div>  
 </template>
 
@@ -21,7 +14,7 @@
     margin-bottom: 20px;
     font-size: 36px;
   }
-  
+
   p {
     margin: 20px 0;
   }
