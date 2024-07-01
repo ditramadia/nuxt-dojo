@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Home</h2>
+    <h1>Home</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates.</p>
   </div>  
