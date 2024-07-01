@@ -10,15 +10,14 @@
         </ul>
       </nav>
     </header>
-  </div>
+    <p>Product details for {{ id }}</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates.</p>
+  </div>  
 </template>
 
 <script setup>
+  const { id } = useRoute().params;
 </script>
 
 <style scoped>
-  h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-  }
 </style>
