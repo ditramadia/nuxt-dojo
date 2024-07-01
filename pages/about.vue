@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Home</h2>
+    <h2>About</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates.</p>
   </div>  
@@ -14,7 +14,7 @@
     margin-bottom: 20px;
     font-size: 36px;
   }
-
+  
   p {
     margin: 20px 0;
   }
