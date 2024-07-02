@@ -7,7 +7,7 @@
 
       <div class="p-7">
         <h2 class="my-7 text-4xl">{{ product.title }}</h2>
-        <p class="my-7 text-xl">Price - ${{ product.price }}</p>
+        <p class="my-7 text-xl">Price - £{{ price }}</p>
         <h3 class="mb-4 pb-2 border-b-2 font-bold ">Description</h3>
         <p class="mb-7">{{ product.description }}</p>
         <button class="btn flex">
@@ -20,7 +20,9 @@
 </template>
 
 <script setup>
-  const { product } = defineProps(['product'])
+  const { product, rate } = defineProps(['product', 'rate'])
+  let price = parseFloat(product.price) * parseFloat(rate)
+  price = price.toFixed(2)
 </script>
 
 <style scoped>

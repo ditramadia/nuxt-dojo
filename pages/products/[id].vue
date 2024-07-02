@@ -5,7 +5,7 @@
       <Meta name="description" :content="product.description" />
     </Head>
 
-    <ProductDetails :product='product' />
+    <ProductDetails :product='product' :rate='data.GBP.value' />
   </div>  
 </template>
 
@@ -21,4 +21,6 @@
   if (!product.value) {
     throw createError({ statusCode: 404, message: 'Product not found', fatal: true});
   }
+
+  const { data } = await useFetch(() => '/api/currency/GBP');
 </script>
