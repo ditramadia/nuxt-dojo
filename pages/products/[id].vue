@@ -1,5 +1,10 @@
 <template>
   <div>
+    <Head>
+      <Title>Nuxt Dojo | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
+
     <ProductDetails :product='product' />
   </div>  
 </template>
@@ -14,6 +19,6 @@
   const { data: product } = await useFetch(uri, { key: id });
 
   if (!product.value) {
-    throw createError({ statusCode: 404, message: 'Product not found'}, fatal: true);
+    throw createError({ statusCode: 404, message: 'Product not found', fatal: true});
   }
 </script>
