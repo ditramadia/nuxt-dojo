@@ -1,9 +1,6 @@
 <template>
   <div>
-    <h1>{{ product.title }}</h1>
-    <p>{{ product.description }}</p>
-    <p>{{ product.price }}</p>
-    <img :src="product.image" :alt="product.title" />
+    <ProductDetails :product='product' />
   </div>  
 </template>
 
