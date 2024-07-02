@@ -1,0 +1,26 @@
+<template>
+  <div>
+    <Head>
+      <Title>Nuxt Dojo | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
+
+    <ProductDetails :product='product' :rate='data.GBP.value' />
+  </div>  
+</template>
+
+<script setup>
+  definePageMeta({
+    layout: 'products'
+  })
+
+  const { id } = useRoute().params;
+  const uri = `https://fakestoreapi.com/products/${id}`;
+  const { data: product } = await useFetch(uri, { key: id });
+
+  if (!product.value) {
+    throw createError({ statusCode: 404, message: 'Product not found', fatal: true});
+  }
+
+  const { data } = await useFetch(() => '/api/currency/GBP');
+</script>
