@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 m-0 p-0 box-border;
+}
+
+@layer components {
+  .btn {
+    @apply bg-[#12b488] px-3 py-2 rounded-md text-white;
+  }
+}
